@@ -1,8 +1,9 @@
-package com.example.foodapp.model;
+﻿package com.example.foodapp.model;
 
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "orders")
 public class Order {
 
     @Id
@@ -12,7 +13,6 @@ public class Order {
     private int amount;
     private String status;
 
-    // getters and setters
     public Long getId() { return id; }
 
     public int getAmount() { return amount; }
